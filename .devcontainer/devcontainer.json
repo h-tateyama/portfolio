@@ -1,0 +1,24 @@
+{
+    "name":"portfolio",
+    "dockerComposeFile": "./docker-compose.yml",
+    "service": "portfolio",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/bash",
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "ms-azuretools.vscode-docker",
+                "dbaeumer.vscode-eslint",
+                "PulkitGangwar.nextjs-snippets",
+                "msjsdiag.vscode-typescript",
+                "johanneshintz.vscode-better-comments",
+                "mikestead.dotenv"
+            ]
+        }
+    },
+    "remoteUser": "node"
+}

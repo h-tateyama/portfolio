@@ -1,0 +1,10 @@
+services:
+  portfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: portfolio
+    volumes:
+      - ../:/workspace
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
