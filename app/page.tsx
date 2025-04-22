@@ -1,97 +1,61 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-
-const basePath = "/portfolio"; // Add basePath constant
+import { Card, CardContent, Typography, Link, AppBar, Toolbar } from "@mui/material";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src={`${basePath}/next.svg`} // Prepend basePath
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src={`${basePath}/vercel.svg`} // Prepend basePath
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+      <AppBar position="static" style={{ backgroundColor: 'darkcyan' }}>
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          ポートフォリオ（公開可能な実績のみ）
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <main className={styles.main} style={{ marginTop: '16px' }}>
+        <div className={styles.cardContainer}>
+          <Card style={{ width: '800px' }}>
+            <CardContent>
+              <Image src="/portfolio/edc.png" alt="Card Image" width={770} height={150} style={{ objectFit: 'cover' }} />
+              <Typography variant="h5" component="div">
+                <Link href="https://secure.labowl.net/app-dms/" target="_blank" rel="noopener noreferrer">
+                  CRO向け治験データ収集システム
+                </Link>
+              </Typography>
+              <Typography variant="body2" color="text.secondary" style={{ marginBottom: '8px' }}>
+                公開年: 2011
+              </Typography>
+              <Typography variant="body2" color="text.secondary" style={{ marginBottom: '8px' }}> 
+                治験データ、臨床研究データをWeb経由で収集するシステム<br />
+              </Typography>
+              <Typography variant="body2" color="text.secondary" style={{ marginBottom: '8px' }}>
+                ・kintoneのように項目を画面上から設定可能<br />
+                ・入力データのバリデーションルールを画面上から設定可能<br />
+                ・入力データ履歴を出力可能<br />
+              </Typography>
+            </CardContent>
+          </Card>
+          <Card style={{ width: '800px' }}>
+            <CardContent>
+            <Image src="/portfolio/stocks.png" alt="Card Image" width={770} height={150} style={{ objectFit: 'cover' }} />
+            <Typography variant="h5" component="div">
+                <Link href="https://asakabu.labowl.net/" target="_blank" rel="noopener noreferrer">
+                  株価予想サイト（習作）
+                </Link>
+              </Typography>
+              <Typography variant="body2" color="text.secondary" style={{ marginBottom: '8px' }}>
+                作成年: 2019
+              </Typography>
+              <Typography variant="body2" color="text.secondary" style={{ marginBottom: '8px' }}>
+                時系列データを元に、翌日の株価を予想するサイト<br />
+              </Typography>
+              <Typography variant="body2" color="text.secondary" style={{ marginBottom: '8px' }}>
+              ・AI(FANN)を使用してテクニカルデータを元に翌営業日の株価を予想する<br />
+              </Typography>
+            </CardContent>
+          </Card>
         </div>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src={`${basePath}/file.svg`} // Prepend basePath
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src={`${basePath}/window.svg`} // Prepend basePath
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src={`${basePath}/globe.svg`} // Prepend basePath
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }
