@@ -5,15 +5,15 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <AppBar position="static" style={{ backgroundColor: 'darkcyan' }}>
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          ポートフォリオ（公開可能な実績のみ）
-          </Typography>
-        </Toolbar>
-      </AppBar>
-      <main className={styles.main} style={{ marginTop: '16px' }}>
-        <div className={styles.cardContainer}>
+      <main className={styles.main} style={{ backgroundColor: '#f5f5f5' }}>
+        <AppBar position="static" style={{ backgroundColor: 'darkcyan' }}>
+          <Toolbar>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            ポートフォリオ（公開可能な実績のみ）
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <div className={styles.cardContainer} style={{ marginTop: '16px', paddingBottom: '16px' }}>
           <Card style={{ width: '800px' }}>
             <CardContent>
               <Image src="/portfolio/edc.png" alt="Card Image" width={770} height={150} style={{ objectFit: 'cover' }} />
