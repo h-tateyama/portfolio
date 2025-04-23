@@ -32,6 +32,7 @@ export default function Home() {
                 ・kintoneのように項目を画面上から設定可能<br />
                 ・入力データのバリデーションルールを画面上から設定可能<br />
                 ・入力データ履歴を出力可能<br />
+                ・臨床研究等でサービス提供の実績あり<br />
               </Typography>
             </CardContent>
           </Card>
