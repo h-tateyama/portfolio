@@ -21,7 +21,7 @@ export default function Home() {
               システム開発歴は 25年以上 になります。Web アプリケーションを中心に、様々な要件・条件でのシステム開発承ります。<br />
                 ・PHP、CakePHP、Laravel<br />
                 ・Python、FastAPI<br />
-                ・Javascript、jQuery、Next.js、React、MUI<br />
+                ・Javascript、jQuery、Next.js、React、MUI、Vue.js<br />
                 ・kintone構築、運用、カスタマイズ（javascript、プラグイン）<br />
                 ・Google Spreadsheetカスタマイズ（GAS）、他サービスとの連携<br />
                 ・Azure、AWS、GCP、その他VPS（さくらインターネットVPS等）でのサーバー構築、運用<br />
