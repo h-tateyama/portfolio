@@ -9,7 +9,31 @@ export default function Home() {
         <AppBar position="static" style={{ backgroundColor: 'darkcyan' }}>
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            ポートフォリオ（公開可能な実績のみ）
+            実績紹介
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <div className={styles.cardContainer} style={{ marginTop: '16px', paddingBottom: '16px' }}>
+        <Card style={{ width: '800px' }}>
+            <CardContent>
+              <Image src="/portfolio/portfolio.png" alt="Card Image" width={770} height={150} style={{ objectFit: 'cover' }} />
+              <Typography variant="body2" color="text.secondary" style={{ marginBottom: '8px' }}> 
+              システム開発歴は 25年以上 になります。Web アプリケーションを中心に、様々な要件・条件でのシステム開発承ります。<br />
+                ・PHP、CakePHP、Laravel<br />
+                ・Python、FastAPI<br />
+                ・Javascript、jQuery、Next.js、React、MUI<br />
+                ・kintone構築、運用、カスタマイズ（javascript、プラグイン）<br />
+                ・Google Spreadsheetカスタマイズ（GAS）、他サービスとの連携<br />
+                ・Azure、AWS、GCP、その他VPS（さくらインターネットVPS等）でのサーバー構築、運用<br />
+                ・その他（VB、C++、C#）<br />
+              </Typography>
+            </CardContent>
+          </Card>
+          </div>
+        <AppBar position="static" style={{ backgroundColor: 'darkcyan' }}>
+          <Toolbar>
+            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            ポートフォリオ（公開可能なサービスのみ）
             </Typography>
           </Toolbar>
         </AppBar>
