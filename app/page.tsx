@@ -22,7 +22,7 @@ export default function Home() {
                 ・PHP、CakePHP、Laravel<br />
                 ・Python、FastAPI<br />
                 ・Javascript、jQuery、Next.js、React、MUI、Vue.js<br />
-                ・kintone構築、運用、カスタマイズ（javascript、プラグイン）<br />
+                ・kintone構築、運用、カスタマイズ（javascriptによるエラーチェック追加/他アプリ連携、プラグイン、React/Vue.js等での画面拡張）<br />
                 ・Google Spreadsheetカスタマイズ（GAS）、他サービスとの連携<br />
                 ・Azure、AWS、GCP、その他VPS（さくらインターネットVPS等）でのサーバー構築、運用<br />
                 ・その他（VB、C++、C#）<br />
